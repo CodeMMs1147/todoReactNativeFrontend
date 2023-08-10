@@ -21,7 +21,7 @@ return (
       <Text>
           Bienvenido
       </Text>
-      <Button title='Ir al login' onPress={NavigateToSignUp} />
+      <Button title='Ir al login' onPress={NavigateToSignIn} />
       <Button title='Ir a registrarme' onPress={NavigateToSignUp} />
   </Box>
 )

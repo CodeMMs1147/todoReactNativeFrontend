@@ -1,7 +1,7 @@
 export const palette = {
     white: '#ffffff',
     primary: '#007AFF',
-    gray550: '#39292',
+    gray550: '#939292',
     gray650: '#8a8a8a',
     gray4: '#898681',
     gray9: '#101928',
