@@ -1,9 +1,10 @@
-import { NavigatorScreenParams } from "@react-navigation/native"
+import { CompositeNavigationProp, NavigatorScreenParams } from "@react-navigation/native"
+import { NativeStackNavigationProp } from "@react-navigation/native-stack"
 
 export type AuthStackParamList = {
-    Welcome: undefined
-    SignIn: undefined
-    SignUp: undefined
+    Bienvenido: undefined
+    Ingresar: undefined
+    Registrarme: undefined
 }
 
 export type RootBottomTabParamList = {
@@ -43,3 +44,7 @@ declare global {
         interface RootParamList extends RootStackParamList{}
     }
 }
+
+export type AuthScreenNavigationType <RouteName extends keyof AuthStackParamList> = CompositeNavigationProp<NativeStackNavigationProp<AuthStackParamList, RouteName>,
+NativeStackNavigationProp<AppStackParamList, 'Root'>
+>
