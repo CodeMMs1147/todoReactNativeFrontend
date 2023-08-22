@@ -9,7 +9,7 @@ const CompletedScreen = () => {
   return (
     <Box>
         <Text>
-            Home
+          Completado
         </Text>
     </Box>
   )

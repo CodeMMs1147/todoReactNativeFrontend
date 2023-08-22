@@ -9,7 +9,7 @@ const TodayScreen = () => {
   return (
     <Box>
         <Text>
-            Home
+            Hoy
         </Text>
     </Box>
   )

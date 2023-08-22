@@ -9,7 +9,13 @@ const Stack = createNativeStackNavigator<AppStackParamList>()
 const AppStackNavigator = () => {
   return (
     <Stack.Navigator>
-        <Stack.Screen name='Root' component={BottomTabNavigator} />
+      <Stack.Screen 
+        name='Root' 
+        component={BottomTabNavigator}
+        options={{
+          headerShown: false,
+        }}
+      />
     </Stack.Navigator>
   )
 }
