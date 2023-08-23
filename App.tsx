@@ -10,18 +10,6 @@ import useUserGlobalStore from '@/store/useUserGlobalStore';
 
 export default function App() {
 
-  const { user, updateUser } = useUserGlobalStore()
-
-  console.log(`user`, JSON.stringify(user, null, 2))
-
-  useEffect(() => {
-    updateUser({
-      email: 'code@gmail.com',
-      name: 'juan'
-    })
-    return () => {}
-  }, [])
-
   return (
     <ThemeProvider theme={theme}>
       <SafeAreaProvider>
